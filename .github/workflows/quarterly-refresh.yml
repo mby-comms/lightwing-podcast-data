@@ -1,0 +1,79 @@
+name: Quarterly Master List Refresh
+
+# Runs every 90 days at 6:00 UTC (2:00 AM ET) on the 1st of January, April, July, October.
+# You can also trigger it manually from the Actions tab via "workflow_dispatch".
+on:
+  schedule:
+    - cron: '0 6 1 1,4,7,10 *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run candidate finder
+        id: finder
+        run: |
+          python3 .github/scripts/find_candidate_shows.py \
+            --master-list podcast-master-list.json \
+            --output candidate-shows.json
+          # Capture the count for use in PR body
+          COUNT=$(python3 -c "import json; d=json.load(open('candidate-shows.json')); print(len(d.get('candidates', [])))")
+          echo "candidate_count=$COUNT" >> $GITHUB_OUTPUT
+
+      - name: Skip PR if no candidates found
+        if: steps.finder.outputs.candidate_count == '0'
+        run: |
+          echo "No new candidate shows found this cycle. Skipping PR creation."
+
+      - name: Open pull request
+        if: steps.finder.outputs.candidate_count != '0'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: refresh/quarterly-${{ github.run_id }}
+          title: "Quarterly refresh: ${{ steps.finder.outputs.candidate_count }} candidate shows for review"
+          body: |
+            ## Quarterly Master List Refresh
+
+            The candidate finder pulled Apple Podcasts charts for:
+            - Business
+            - Technology
+            - Investing
+            - Entrepreneurship
+
+            **${{ steps.finder.outputs.candidate_count }} candidate shows** are not currently in the master list.
+
+            ### What to do
+
+            1. Open `candidate-shows.json` in this PR
+            2. Review each candidate against the criteria in `references/master-list-spec.md`:
+               - Does it consistently book C-level guests in B2B tech, AI, fintech, or business?
+               - Does it have a public RSS feed?
+               - Has it published in the last 6 months?
+            3. For each candidate you want to add: copy its entry into `podcast-master-list.json` under `shows`, with the appropriate `tier` (T1, T2, or T3)
+            4. Delete `candidate-shows.json` once you've made your selections
+            5. Merge this PR
+
+            ### What NOT to do
+
+            - Do not merge this PR as-is. The candidates are unreviewed.
+            - Do not auto-add all candidates. Apple's charts include personal finance, motivational, and crypto-bro content that does not belong in this list.
+
+            ### Cadence reminder
+
+            This workflow runs quarterly on Jan 1, Apr 1, Jul 1, Oct 1. You can trigger it manually any time via the Actions tab.
+          commit-message: "Quarterly refresh: ${{ steps.finder.outputs.candidate_count }} candidate shows"
+          delete-branch: true
