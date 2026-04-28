@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
-"""find_candidate_shows.py v2 — pulls Apple Podcasts top charts and identifies
-shows not currently in the master list. Outputs candidates with smart filtering.
+"""find_candidate_shows.py v3 — allowlist mode.
+
+Keeps only shows that pass at least one of:
+  1. Artist name matches a known quality publisher
+  2. Apple categories include high-signal combinations
+  3. Show charts in 3+ of the 5 scanned genres
+
+Plus the v2 pre-filters: keyword exclusion, track count, country.
 """
 
 import argparse
@@ -21,12 +27,13 @@ GENRES = {
 
 CHART_URL_TEMPLATE = "https://itunes.apple.com/us/rss/toppodcasts/limit={limit}/genre={genre_id}/json"
 LOOKUP_URL_TEMPLATE = "https://itunes.apple.com/lookup?id={apple_id}"
-USER_AGENT = "Lightwing-Podcast-Intel-QuarterlyRefresh/2.0"
+USER_AGENT = "Lightwing-Podcast-Intel-QuarterlyRefresh/3.0"
 
 CHART_LIMIT = 50
 DELAY_BETWEEN_CALLS = 1.0
 MIN_TRACK_COUNT = 25
 ALLOWED_COUNTRIES = {"USA", "GBR", "AUS", "CAN"}
+MIN_CROSS_CATEGORY_CHARTS = 3
 
 EXCLUSION_KEYWORDS = [
     "passive income", "real estate", "manifest", "abundance", "millionaire",
@@ -48,16 +55,37 @@ EXCLUSION_KEYWORDS = [
     "grant cardone", "gary vaynerchuk", "garyvee",
 ]
 
+# ALLOWLIST: artist name must contain at least one of these for the
+# "known publisher" path. Lowercased substring match.
 QUALITY_PUBLISHERS = [
     "bloomberg", "new york times", "nyt", "wall street journal", "wsj",
     "financial times", "the information", "vox", "vox media", "npr",
     "pushkin", "wondery", "iheart", "iheartmedia", "iheartpodcasts",
     "axios", "the verge", "techcrunch", "fortune", "forbes", "cnbc",
-    "marketplace", "american public media",
+    "marketplace", "american public media", "apm",
     "a16z", "andreessen horowitz", "sequoia", "lightspeed", "greylock",
     "founders fund", "benchmark", "kleiner perkins", "y combinator",
     "harvard business review", "hbr", "mckinsey", "stanford", "wharton",
     "goldman sachs", "jpmorgan", "morgan stanley",
+    "the atlantic", "new yorker", "wired", "fast company", "inc.",
+    "puck", "semafor", "stratechery", "ben thompson",
+    "kara swisher", "scott galloway", "tim ferriss", "ezra klein",
+    "nilay patel", "matt belloni", "dwarkesh", "lex fridman",
+    "patrick o'shaughnessy", "harry stebbings", "logan bartlett",
+    "all-in", "chamath", "jason calacanis",
+    "ted", "ted talks", "ted radio",
+    "colossus",
+]
+
+# Categories that, when present, signal serious tech/business content
+HIGH_SIGNAL_CATEGORIES = {
+    "Tech News",
+}
+# Pairs of categories that together signal serious content
+HIGH_SIGNAL_PAIRS = [
+    {"Technology", "Business"},
+    {"Technology", "News"},
+    {"Business", "News"},
 ]
 
 
@@ -117,18 +145,46 @@ def is_excluded(name: str, artist: str) -> Tuple[bool, Optional[str]]:
     return False, None
 
 
-def quality_score(show: Dict[str, Any], chart_count: int) -> int:
+def passes_allowlist(artist: str, categories: List[str], chart_count: int) -> Tuple[bool, str]:
+    """v3 allowlist check. Returns (passes, reason)."""
+    artist_lc = (artist or "").lower()
+
+    # Path 1: known publisher
+    for pub in QUALITY_PUBLISHERS:
+        if pub in artist_lc:
+            return True, f"publisher:{pub}"
+
+    # Path 2: high-signal category present
+    cats_set = set(categories or [])
+    for cat in HIGH_SIGNAL_CATEGORIES:
+        if cat in cats_set:
+            return True, f"category:{cat}"
+
+    # Path 3: high-signal category PAIRS
+    for pair in HIGH_SIGNAL_PAIRS:
+        if pair.issubset(cats_set):
+            return True, f"category_pair:{'+'.join(sorted(pair))}"
+
+    # Path 4: cross-category chart appearance
+    if chart_count >= MIN_CROSS_CATEGORY_CHARTS:
+        return True, f"cross_category_charts:{chart_count}"
+
+    return False, "no_allowlist_match"
+
+
+def quality_score(artist: str, categories: List[str], chart_count: int, track_count: int) -> int:
+    """Higher = better. Used to sort candidates within the kept list."""
     score = chart_count * 10
-    artist = (show.get("artist_name") or "").lower()
-    for publisher in QUALITY_PUBLISHERS:
-        if publisher in artist:
+    artist_lc = (artist or "").lower()
+    for pub in QUALITY_PUBLISHERS:
+        if pub in artist_lc:
             score += 50
             break
-    relevant_cats = {"Technology", "Business", "News", "Tech News", "Investing", "Management"}
-    for cat in show.get("categories", []):
-        if cat in relevant_cats:
+    relevant = {"Technology", "Business", "News", "Tech News", "Investing", "Management"}
+    for cat in categories or []:
+        if cat in relevant:
             score += 5
-    if (show.get("track_count") or 0) > 100:
+    if track_count > 100:
         score += 5
     return score
 
@@ -140,36 +196,31 @@ def main():
     args = parser.parse_args()
 
     existing_ids = load_master_list_apple_ids(args.master_list)
-    sys.stderr.write(f"[info] Master list has {len(existing_ids)} shows with apple_ids\n")
+    sys.stderr.write(f"[info] Master list has {len(existing_ids)} shows\n")
 
     chart_entries: Dict[int, Dict[str, Any]] = {}
     for genre_name, genre_id in GENRES.items():
-        entries = fetch_chart(genre_name, genre_id)
-        for e in entries:
+        for e in fetch_chart(genre_name, genre_id):
             aid = e["apple_id"]
             if aid in chart_entries:
                 chart_entries[aid]["genres_charting"].append(genre_name)
             else:
-                chart_entries[aid] = {
-                    "apple_id": aid,
-                    "chart_name": e["name"],
-                    "genres_charting": [genre_name],
-                }
+                chart_entries[aid] = {"apple_id": aid, "chart_name": e["name"], "genres_charting": [genre_name]}
         time.sleep(DELAY_BETWEEN_CALLS)
 
     new_candidates = [e for aid, e in chart_entries.items() if aid not in existing_ids]
     sys.stderr.write(f"[info] {len(new_candidates)} candidates not in master list\n")
 
     enriched = []
-    excluded = {"keyword": 0, "track_count": 0, "country": 0, "lookup_failed": 0}
-    excluded_examples: Dict[str, List[str]] = {"keyword": [], "track_count": [], "country": []}
+    excluded = {"keyword": 0, "track_count": 0, "country": 0, "allowlist": 0, "lookup_failed": 0}
+    excluded_examples: Dict[str, List[str]] = {"keyword": [], "track_count": [], "country": [], "allowlist": []}
 
     for i, candidate in enumerate(new_candidates):
         sys.stderr.write(f"[{i+1}/{len(new_candidates)}] {candidate['chart_name']}")
         details = fetch_show_details(candidate["apple_id"])
         if not details:
-            sys.stderr.write(f"  -> lookup failed\n")
             excluded["lookup_failed"] += 1
+            sys.stderr.write(f"  -> lookup failed\n")
             time.sleep(DELAY_BETWEEN_CALLS)
             continue
 
@@ -177,48 +228,61 @@ def main():
         artist = details.get("artistName") or ""
         track_count = details.get("trackCount") or 0
         country = details.get("country") or ""
+        categories = details.get("genres", [])
+        chart_count = len(candidate["genres_charting"])
 
-        excluded_flag, reason = is_excluded(name, artist)
-        if excluded_flag:
-            sys.stderr.write(f"  -> EXCLUDED (keyword: '{reason}')\n")
+        # Pre-filter 1: keyword
+        excl, reason = is_excluded(name, artist)
+        if excl:
             excluded["keyword"] += 1
             if len(excluded_examples["keyword"]) < 5:
-                excluded_examples["keyword"].append(f"{name} (matched: {reason})")
+                excluded_examples["keyword"].append(f"{name} ({reason})")
+            sys.stderr.write(f"  -> EXCLUDED keyword:{reason}\n")
             time.sleep(DELAY_BETWEEN_CALLS)
             continue
 
+        # Pre-filter 2: track count
         if track_count < MIN_TRACK_COUNT:
-            sys.stderr.write(f"  -> EXCLUDED (track_count={track_count})\n")
             excluded["track_count"] += 1
             if len(excluded_examples["track_count"]) < 5:
                 excluded_examples["track_count"].append(f"{name} ({track_count} eps)")
+            sys.stderr.write(f"  -> EXCLUDED track:{track_count}\n")
             time.sleep(DELAY_BETWEEN_CALLS)
             continue
 
+        # Pre-filter 3: country
         if country and country not in ALLOWED_COUNTRIES:
-            sys.stderr.write(f"  -> EXCLUDED (country={country})\n")
             excluded["country"] += 1
             if len(excluded_examples["country"]) < 5:
                 excluded_examples["country"].append(f"{name} ({country})")
+            sys.stderr.write(f"  -> EXCLUDED country:{country}\n")
             time.sleep(DELAY_BETWEEN_CALLS)
             continue
 
-        score = quality_score(
-            {"artist_name": artist, "categories": details.get("genres", []), "track_count": track_count},
-            chart_count=len(candidate["genres_charting"]),
-        )
-        sys.stderr.write(f"  -> KEPT (score={score})\n")
+        # ALLOWLIST CHECK
+        passes, reason = passes_allowlist(artist, categories, chart_count)
+        if not passes:
+            excluded["allowlist"] += 1
+            if len(excluded_examples["allowlist"]) < 10:
+                excluded_examples["allowlist"].append(f"{name} (artist: {artist})")
+            sys.stderr.write(f"  -> EXCLUDED allowlist\n")
+            time.sleep(DELAY_BETWEEN_CALLS)
+            continue
+
+        score = quality_score(artist, categories, chart_count, track_count)
+        sys.stderr.write(f"  -> KEPT score={score} reason={reason}\n")
 
         enriched.append({
             "name": name,
             "apple_id": candidate["apple_id"],
             "feed_url": details.get("feedUrl"),
             "artist_name": artist,
-            "categories": details.get("genres", []),
+            "categories": categories,
             "track_count": track_count,
             "country": country,
             "genres_charting_in": candidate["genres_charting"],
             "quality_score": score,
+            "allowlist_reason": reason,
             "tier": "REVIEW",
             "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding.",
         })
@@ -229,7 +293,7 @@ def main():
     output = {
         "generated_at": time.strftime("%Y-%m-%d %H:%M:%S UTC", time.gmtime()),
         "source": "Apple Podcasts top charts (US)",
-        "filter_version": "v2",
+        "filter_version": "v3-allowlist",
         "genres_scanned": list(GENRES.keys()),
         "shows_in_existing_list": len(existing_ids),
         "shows_in_charts": len(chart_entries),
@@ -239,6 +303,7 @@ def main():
             "excluded_by_keyword": excluded["keyword"],
             "excluded_by_track_count": excluded["track_count"],
             "excluded_by_country": excluded["country"],
+            "excluded_by_allowlist": excluded["allowlist"],
             "lookup_failed": excluded["lookup_failed"],
         },
         "filter_examples": excluded_examples,
