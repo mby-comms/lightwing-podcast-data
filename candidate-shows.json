@@ -1,0 +1,950 @@
+{
+  "generated_at": "2026-04-28 17:49:20 UTC",
+  "source": "Apple Podcasts top charts (US)",
+  "filter_version": "v3-allowlist",
+  "genres_scanned": [
+    "Business",
+    "Technology",
+    "Investing",
+    "Entrepreneurship",
+    "Tech News"
+  ],
+  "shows_in_existing_list": 49,
+  "shows_in_charts": 220,
+  "raw_candidates_before_filters": 202,
+  "filter_results": {
+    "kept": 43,
+    "excluded_by_keyword": 3,
+    "excluded_by_track_count": 24,
+    "excluded_by_country": 0,
+    "excluded_by_allowlist": 132,
+    "lookup_failed": 0
+  },
+  "filter_examples": {
+    "keyword": [
+      "REAL AF with Andy Frisella (andy frisella)",
+      "The Mello Millionaire with Tommy Mello (millionaire)",
+      "7-Figure Fundraising Podcast (7-figure)"
+    ],
+    "track_count": [
+      "Unblinded with Sean Callagy (19 eps)",
+      "Think AI Podcast (6 eps)",
+      "Tomorrow, Today (8 eps)",
+      "Bourbon with Brad (11 eps)",
+      "Quantum Matters: Where Quantum Computing Gets Real (3 eps)"
+    ],
+    "country": [],
+    "allowlist": [
+      "Money Rehab with Nicole Lapin (artist: Money News Network)",
+      "The Diary Of A CEO with Steven Bartlett (artist: DOAC)",
+      "The Vault Unlocked (artist: Kayvon Kay)",
+      "The Learning Leader Show With Ryan Hawk (artist: Ryan Hawk)",
+      "The Ramsey Show (artist: Ramsey Network)",
+      "Creating Confidence with Heather Monahan (artist: Heather Monahan | YAP Media)",
+      "3 Takeaways\u2122 (artist: Lynn Thoman)",
+      "Founder's Story (artist: IBH Media)",
+      "Coffeez for Closers with Joe Shalaby (artist: Joseph Shalaby)",
+      "Right About Now - Legendary Business Advice (artist: The Radcast Network)"
+    ]
+  },
+  "candidates_count": 43,
+  "candidates": [
+    {
+      "name": "The Prof G Pod with Scott Galloway",
+      "apple_id": 1498802610,
+      "feed_url": "https://feeds.megaphone.fm/WWO6655869236",
+      "artist_name": "Vox Media Podcast Network",
+      "categories": [
+        "Entrepreneurship",
+        "Podcasts",
+        "Business",
+        "Careers"
+      ],
+      "track_count": 1095,
+      "country": "USA",
+      "genres_charting_in": [
+        "Business",
+        "Investing"
+      ],
+      "quality_score": 80,
+      "allowlist_reason": "publisher:vox",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "The Home Service Expert Podcast",
+      "apple_id": 1341478446,
+      "feed_url": "https://rss.libsyn.com/shows/105472/destinations/567121.xml",
+      "artist_name": "Tommy Mello: $200 Million Founder|Forbes, Inc., Entrepreneur Columnist",
+      "categories": [
+        "Management",
+        "Podcasts",
+        "Business"
+      ],
+      "track_count": 468,
+      "country": "USA",
+      "genres_charting_in": [
+        "Business"
+      ],
+      "quality_score": 75,
+      "allowlist_reason": "publisher:forbes",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "Prof G Markets",
+      "apple_id": 1744631325,
+      "feed_url": "https://feeds.megaphone.fm/profgmarkets",
+      "artist_name": "Vox Media Podcast Network",
+      "categories": [
+        "Investing",
+        "Podcasts",
+        "Business",
+        "Entrepreneurship"
+      ],
+      "track_count": 315,
+      "country": "USA",
+      "genres_charting_in": [
+        "Business"
+      ],
+      "quality_score": 75,
+      "allowlist_reason": "publisher:vox",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "The Indicator from Planet Money",
+      "apple_id": 1320118593,
+      "feed_url": "https://feeds.npr.org/510325/podcast.xml",
+      "artist_name": "NPR",
+      "categories": [
+        "Business",
+        "Podcasts"
+      ],
+      "track_count": 1004,
+      "country": "USA",
+      "genres_charting_in": [
+        "Business"
+      ],
+      "quality_score": 70,
+      "allowlist_reason": "publisher:npr",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "TED Radio Hour",
+      "apple_id": 523121474,
+      "feed_url": "https://feeds.npr.org/510298/podcast.xml",
+      "artist_name": "NPR",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "Science",
+        "Social Sciences"
+      ],
+      "track_count": 384,
+      "country": "USA",
+      "genres_charting_in": [
+        "Technology"
+      ],
+      "quality_score": 70,
+      "allowlist_reason": "publisher:npr",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "There Are No Girls on the Internet",
+      "apple_id": 1520715907,
+      "feed_url": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/ad016d13-045e-48f3-9aa5-ae280172b27d/34cc8d15-19f1-45d8-a158-ae280172b294/podcast.rss",
+      "artist_name": "iHeartPodcasts",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "Society & Culture"
+      ],
+      "track_count": 407,
+      "country": "USA",
+      "genres_charting_in": [
+        "Technology"
+      ],
+      "quality_score": 70,
+      "allowlist_reason": "publisher:iheart",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "Better Offline",
+      "apple_id": 1730587238,
+      "feed_url": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/cf0c25ad-cf01-4da5-ae1c-b0fc015f790e/53ed270b-7147-4f70-81c2-b0fc015fe4ed/podcast.rss",
+      "artist_name": "Cool Zone Media and iHeartPodcasts",
+      "categories": [
+        "Technology",
+        "Podcasts"
+      ],
+      "track_count": 233,
+      "country": "USA",
+      "genres_charting_in": [
+        "Technology"
+      ],
+      "quality_score": 70,
+      "allowlist_reason": "publisher:iheart",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "Money And Wealth With John Hope Bryant",
+      "apple_id": 1729790200,
+      "feed_url": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/2b9e5b3d-5b65-45fd-b3cb-b07501367030/34f4051e-85fe-4cdb-890c-b0750136f10a/podcast.rss",
+      "artist_name": "The Black Effect Podcast Network and iHeartPodcasts",
+      "categories": [
+        "Entrepreneurship",
+        "Podcasts",
+        "Business",
+        "Society & Culture"
+      ],
+      "track_count": 127,
+      "country": "USA",
+      "genres_charting_in": [
+        "Investing"
+      ],
+      "quality_score": 70,
+      "allowlist_reason": "publisher:iheart",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "Small Nonprofit: Fundraising Tips, Leadership Strategies, and Community-Centric Solutions",
+      "apple_id": 1435361544,
+      "feed_url": "https://rss.buzzsprout.com/208666.rss",
+      "artist_name": "Further Together: Fundraising Strategies for Nonprofit Organizations",
+      "categories": [
+        "Non-Profit",
+        "Podcasts",
+        "Business",
+        "Careers"
+      ],
+      "track_count": 329,
+      "country": "USA",
+      "genres_charting_in": [
+        "Entrepreneurship"
+      ],
+      "quality_score": 70,
+      "allowlist_reason": "publisher:npr",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "The Daily",
+      "apple_id": 1200361736,
+      "feed_url": "https://feeds.simplecast.com/Sl5CSM3S",
+      "artist_name": "The New York Times",
+      "categories": [
+        "Daily News",
+        "Podcasts",
+        "News"
+      ],
+      "track_count": 2584,
+      "country": "USA",
+      "genres_charting_in": [
+        "Tech News"
+      ],
+      "quality_score": 70,
+      "allowlist_reason": "publisher:new york times",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "Up First from NPR",
+      "apple_id": 1222114325,
+      "feed_url": "https://feeds.npr.org/510318/podcast.xml",
+      "artist_name": "NPR",
+      "categories": [
+        "Daily News",
+        "Podcasts",
+        "News"
+      ],
+      "track_count": 1244,
+      "country": "USA",
+      "genres_charting_in": [
+        "Tech News"
+      ],
+      "quality_score": 70,
+      "allowlist_reason": "publisher:npr",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "Smart Talks with IBM",
+      "apple_id": 1558889546,
+      "feed_url": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/85547dfc-49bd-4e63-a6cc-ae32006cd832/6d9e2ef8-e4e9-45e9-9e13-ae32006cd844/podcast.rss",
+      "artist_name": "Pushkin Industries and iHeartPodcasts",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "Science"
+      ],
+      "track_count": 53,
+      "country": "USA",
+      "genres_charting_in": [
+        "Technology"
+      ],
+      "quality_score": 65,
+      "allowlist_reason": "publisher:pushkin",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "Galaxy Brain",
+      "apple_id": 1378618386,
+      "feed_url": "https://feeds.megaphone.fm/galaxybrain",
+      "artist_name": "The Atlantic",
+      "categories": [
+        "Technology",
+        "Podcasts"
+      ],
+      "track_count": 26,
+      "country": "USA",
+      "genres_charting_in": [
+        "Technology"
+      ],
+      "quality_score": 65,
+      "allowlist_reason": "publisher:the atlantic",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "Nonprofit CEO SPARK",
+      "apple_id": 1832356091,
+      "feed_url": "https://rss.buzzsprout.com/2519446.rss",
+      "artist_name": "Marcia Beckner, Nonprofit CEO Mentor & Culture Strategist",
+      "categories": [
+        "Non-Profit",
+        "Podcasts",
+        "Business",
+        "Entrepreneurship"
+      ],
+      "track_count": 30,
+      "country": "USA",
+      "genres_charting_in": [
+        "Entrepreneurship"
+      ],
+      "quality_score": 65,
+      "allowlist_reason": "publisher:npr",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "Stuff You Should Know",
+      "apple_id": 278981407,
+      "feed_url": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/a91018a4-ea4f-4130-bf55-ae270180c327/44710ecc-10bb-48d1-93c7-ae270180c33e/podcast.rss",
+      "artist_name": "iHeartPodcasts",
+      "categories": [
+        "Society & Culture",
+        "Podcasts"
+      ],
+      "track_count": 2036,
+      "country": "USA",
+      "genres_charting_in": [
+        "Tech News"
+      ],
+      "quality_score": 65,
+      "allowlist_reason": "publisher:iheart",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "My Favorite Murder with Karen Kilgariff and Georgia Hardstark",
+      "apple_id": 1074507850,
+      "feed_url": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/bdde8bb3-169d-43b1-91d3-b24c0047969c/f450d41f-16bc-4ecd-8f6c-b24c004796e2/podcast.rss",
+      "artist_name": "Exactly Right and iHeartPodcasts",
+      "categories": [
+        "True Crime",
+        "Podcasts"
+      ],
+      "track_count": 1154,
+      "country": "USA",
+      "genres_charting_in": [
+        "Tech News"
+      ],
+      "quality_score": 65,
+      "allowlist_reason": "publisher:iheart",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "Betrayal Season 5",
+      "apple_id": 1615637724,
+      "feed_url": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/7b1f0895-f595-4c38-afb6-ae6001531610/f1aae979-82f6-402c-8906-ae6001537b33/podcast.rss",
+      "artist_name": "iHeartPodcasts | Glass Podcasts",
+      "categories": [
+        "True Crime",
+        "Podcasts",
+        "Society & Culture",
+        "Relationships"
+      ],
+      "track_count": 162,
+      "country": "USA",
+      "genres_charting_in": [
+        "Tech News"
+      ],
+      "quality_score": 65,
+      "allowlist_reason": "publisher:iheart",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "Digital Social Hour",
+      "apple_id": 1676846015,
+      "feed_url": "https://feeds.simplecast.com/gVWKQwJq",
+      "artist_name": "Sean Kelly",
+      "categories": [
+        "Entrepreneurship",
+        "Podcasts",
+        "Business",
+        "Careers"
+      ],
+      "track_count": 200,
+      "country": "USA",
+      "genres_charting_in": [
+        "Business",
+        "Investing",
+        "Tech News"
+      ],
+      "quality_score": 40,
+      "allowlist_reason": "cross_category_charts:3",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "Young and Profiting with Hala Taha",
+      "apple_id": 1368888880,
+      "feed_url": "https://rss.introcast.io/1368888880/feeds.megaphone.fm/yap",
+      "artist_name": "Hala Taha | Entrepreneurship, Sales, Marketing | YAP Media Network",
+      "categories": [
+        "Entrepreneurship",
+        "Podcasts",
+        "Business",
+        "Marketing"
+      ],
+      "track_count": 731,
+      "country": "USA",
+      "genres_charting_in": [
+        "Business",
+        "Investing",
+        "Tech News"
+      ],
+      "quality_score": 40,
+      "allowlist_reason": "cross_category_charts:3",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "Habits and Hustle",
+      "apple_id": 1451897026,
+      "feed_url": "https://feeds.megaphone.fm/YAP9756236278",
+      "artist_name": "Jen Cohen",
+      "categories": [
+        "Entrepreneurship",
+        "Podcasts",
+        "Business",
+        "Education",
+        "Self-Improvement"
+      ],
+      "track_count": 316,
+      "country": "USA",
+      "genres_charting_in": [
+        "Business",
+        "Investing",
+        "Tech News"
+      ],
+      "quality_score": 40,
+      "allowlist_reason": "cross_category_charts:3",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "The Money Mondays",
+      "apple_id": 1664983297,
+      "feed_url": "https://anchor.fm/s/d9265370/podcast/rss",
+      "artist_name": "Dan Fleyshman",
+      "categories": [
+        "Entrepreneurship",
+        "Podcasts",
+        "Business"
+      ],
+      "track_count": 167,
+      "country": "USA",
+      "genres_charting_in": [
+        "Business",
+        "Investing",
+        "Tech News"
+      ],
+      "quality_score": 40,
+      "allowlist_reason": "cross_category_charts:3",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "Proven Podcast",
+      "apple_id": 1744386875,
+      "feed_url": "https://rss.libsyn.com/shows/526583/destinations/4528548.xml",
+      "artist_name": "Charles Schwartz",
+      "categories": [
+        "Entrepreneurship",
+        "Podcasts",
+        "Business"
+      ],
+      "track_count": 78,
+      "country": "USA",
+      "genres_charting_in": [
+        "Business",
+        "Investing",
+        "Tech News"
+      ],
+      "quality_score": 35,
+      "allowlist_reason": "cross_category_charts:3",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "Waveform: The MKBHD Podcast",
+      "apple_id": 1474429475,
+      "feed_url": "https://feeds.megaphone.fm/STU4418364045",
+      "artist_name": "MKBHD",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "News",
+        "Tech News"
+      ],
+      "track_count": 349,
+      "country": "USA",
+      "genres_charting_in": [
+        "Technology"
+      ],
+      "quality_score": 30,
+      "allowlist_reason": "category:Tech News",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "Morning Brew Daily",
+      "apple_id": 1480059697,
+      "feed_url": "https://feeds.megaphone.fm/MOBI8777994188",
+      "artist_name": "Morning Brew",
+      "categories": [
+        "Business",
+        "Podcasts",
+        "News",
+        "Business News"
+      ],
+      "track_count": 834,
+      "country": "USA",
+      "genres_charting_in": [
+        "Business"
+      ],
+      "quality_score": 25,
+      "allowlist_reason": "category_pair:Business+News",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "The Room Podcast",
+      "apple_id": 1539670094,
+      "feed_url": "https://feeds.simplecast.com/aPz9Qkq6",
+      "artist_name": "Claudia Laurie and Madison McIlwain",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "Business",
+        "Entrepreneurship"
+      ],
+      "track_count": 138,
+      "country": "USA",
+      "genres_charting_in": [
+        "Technology"
+      ],
+      "quality_score": 25,
+      "allowlist_reason": "category_pair:Business+Technology",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "Building AI Boston",
+      "apple_id": 1787830122,
+      "feed_url": "https://feeds.megaphone.fm/CSN8756441179",
+      "artist_name": "Building AI Boston",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "News",
+        "Tech News"
+      ],
+      "track_count": 33,
+      "country": "USA",
+      "genres_charting_in": [
+        "Technology"
+      ],
+      "quality_score": 25,
+      "allowlist_reason": "category:Tech News",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "The Digital Executive",
+      "apple_id": 1501617739,
+      "feed_url": "https://rss.art19.com/the-digital-executive",
+      "artist_name": "Coruzant Technologies",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "Business"
+      ],
+      "track_count": 1235,
+      "country": "USA",
+      "genres_charting_in": [
+        "Technology"
+      ],
+      "quality_score": 25,
+      "allowlist_reason": "category_pair:Business+Technology",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "Embracing Digital Transformation",
+      "apple_id": 1501881754,
+      "feed_url": "https://rss.art19.com/embracing-digital-transformation",
+      "artist_name": "Dr. Darren Pulsipher",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "Business"
+      ],
+      "track_count": 339,
+      "country": "USA",
+      "genres_charting_in": [
+        "Technology"
+      ],
+      "quality_score": 25,
+      "allowlist_reason": "category_pair:Business+Technology",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "Reshaping Workflows with Dell Pro Precision and NVIDIA RTX PRO GPUs",
+      "apple_id": 1802645201,
+      "feed_url": "https://feeds.simplecast.com/7_9d7yco",
+      "artist_name": "Dell Technologies AI Factory with NVIDIA",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "News",
+        "Tech News"
+      ],
+      "track_count": 58,
+      "country": "USA",
+      "genres_charting_in": [
+        "Technology"
+      ],
+      "quality_score": 25,
+      "allowlist_reason": "category:Tech News",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "TBPN",
+      "apple_id": 1772360235,
+      "feed_url": "https://feeds.transistor.fm/technology-brother",
+      "artist_name": "John Coogan & Jordi Hays",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "Business",
+        "Entrepreneurship"
+      ],
+      "track_count": 503,
+      "country": "USA",
+      "genres_charting_in": [
+        "Technology"
+      ],
+      "quality_score": 25,
+      "allowlist_reason": "category_pair:Business+Technology",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "\u7845\u8c37101",
+      "apple_id": 1498541229,
+      "feed_url": "https://feeds.fireside.fm/sv101/rss",
+      "artist_name": "\u7845\u8c37101",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "Business",
+        "Entrepreneurship"
+      ],
+      "track_count": 243,
+      "country": "USA",
+      "genres_charting_in": [
+        "Technology"
+      ],
+      "quality_score": 25,
+      "allowlist_reason": "category_pair:Business+Technology",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "The AI XR Podcast",
+      "apple_id": 1526505913,
+      "feed_url": "https://rss.art19.com/the-ai-xr-podcast",
+      "artist_name": "Charlie Fink Productions",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "News",
+        "Business News"
+      ],
+      "track_count": 289,
+      "country": "USA",
+      "genres_charting_in": [
+        "Technology"
+      ],
+      "quality_score": 25,
+      "allowlist_reason": "category_pair:News+Technology",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "\u5f20\u5c0f\u73faJ\u00f9n\uff5c\u5546\u4e1a\u8bbf\u8c08\u5f55",
+      "apple_id": 1634356920,
+      "feed_url": "https://feed.xyzfm.space/dk4yh3pkpjp3",
+      "artist_name": "\u5f20\u5c0f\u73fa",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "Business"
+      ],
+      "track_count": 141,
+      "country": "USA",
+      "genres_charting_in": [
+        "Technology"
+      ],
+      "quality_score": 25,
+      "allowlist_reason": "category_pair:Business+Technology",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "TechSurge: Deep Tech Podcast",
+      "apple_id": 1755173852,
+      "feed_url": "https://feeds.transistor.fm/techsurge-deep-tech-podcast",
+      "artist_name": "Celesta Capital | Deep Tech Venture Capital Firm",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "Business",
+        "Investing"
+      ],
+      "track_count": 32,
+      "country": "USA",
+      "genres_charting_in": [
+        "Technology"
+      ],
+      "quality_score": 25,
+      "allowlist_reason": "category_pair:Business+Technology",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "Everyday AI Podcast \u2013 An AI and ChatGPT Podcast",
+      "apple_id": 1683401861,
+      "feed_url": "https://rss.buzzsprout.com/2175779.rss",
+      "artist_name": "Everyday AI",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "Business",
+        "Entrepreneurship"
+      ],
+      "track_count": 764,
+      "country": "USA",
+      "genres_charting_in": [
+        "Technology"
+      ],
+      "quality_score": 25,
+      "allowlist_reason": "category_pair:Business+Technology",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "DecaMillionaire Decoded",
+      "apple_id": 1332958360,
+      "feed_url": "https://rss.libsyn.com/shows/112015/destinations/624348.xml",
+      "artist_name": "Justin Goodbread",
+      "categories": [
+        "Entrepreneurship",
+        "Podcasts",
+        "Business",
+        "Technology"
+      ],
+      "track_count": 646,
+      "country": "USA",
+      "genres_charting_in": [
+        "Investing"
+      ],
+      "quality_score": 25,
+      "allowlist_reason": "category_pair:Business+Technology",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "Scouting for Growth",
+      "apple_id": 1601461282,
+      "feed_url": "https://feed.podbean.com/sabinega/feed.xml",
+      "artist_name": "Sabine VanderLinden",
+      "categories": [
+        "Entrepreneurship",
+        "Podcasts",
+        "Business",
+        "Technology"
+      ],
+      "track_count": 222,
+      "country": "USA",
+      "genres_charting_in": [
+        "Investing"
+      ],
+      "quality_score": 25,
+      "allowlist_reason": "category_pair:Business+Technology",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "The Discovery Pod",
+      "apple_id": 1460835780,
+      "feed_url": "https://feeds.podetize.com/rss/mix0zlnnkp",
+      "artist_name": "Douglas Nelson",
+      "categories": [
+        "Non-Profit",
+        "Podcasts",
+        "Business",
+        "News",
+        "Business News"
+      ],
+      "track_count": 320,
+      "country": "USA",
+      "genres_charting_in": [
+        "Entrepreneurship"
+      ],
+      "quality_score": 25,
+      "allowlist_reason": "category_pair:Business+News",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "For the Good of the Public | The Morning Five",
+      "apple_id": 1604696954,
+      "feed_url": "https://feeds.megaphone.fm/TSF7809756736",
+      "artist_name": "That Sounds Fun Network",
+      "categories": [
+        "Non-Profit",
+        "Podcasts",
+        "Business",
+        "News"
+      ],
+      "track_count": 789,
+      "country": "USA",
+      "genres_charting_in": [
+        "Entrepreneurship"
+      ],
+      "quality_score": 25,
+      "allowlist_reason": "category_pair:Business+News",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "We The Builders",
+      "apple_id": 1829681453,
+      "feed_url": "https://api.substack.com/feed/podcast/2901913.rss",
+      "artist_name": "Suffiyan Malik",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "Business"
+      ],
+      "track_count": 29,
+      "country": "USA",
+      "genres_charting_in": [
+        "Technology"
+      ],
+      "quality_score": 20,
+      "allowlist_reason": "category_pair:Business+Technology",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "Cheeky Pint",
+      "apple_id": 1821055332,
+      "feed_url": "https://feeds.transistor.fm/cheeky-pint-with-john-collison",
+      "artist_name": "Stripe",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "Business",
+        "Entrepreneurship"
+      ],
+      "track_count": 35,
+      "country": "USA",
+      "genres_charting_in": [
+        "Technology"
+      ],
+      "quality_score": 20,
+      "allowlist_reason": "category_pair:Business+Technology",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "Der Gro\u00dfe Neustart",
+      "apple_id": 1539335147,
+      "feed_url": "https://dergrosseneustart.podigee.io/feed/mp3",
+      "artist_name": "Sibylle Barden, Publizistin",
+      "categories": [
+        "Non-Profit",
+        "Podcasts",
+        "Business",
+        "News",
+        "Business News"
+      ],
+      "track_count": 44,
+      "country": "USA",
+      "genres_charting_in": [
+        "Entrepreneurship"
+      ],
+      "quality_score": 20,
+      "allowlist_reason": "category_pair:Business+News",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    },
+    {
+      "name": "Break Fake Rules: Change Big Giving For Good",
+      "apple_id": 1725175883,
+      "feed_url": "https://feeds.captivate.fm/break-fake-rules/",
+      "artist_name": "Stupski Foundation",
+      "categories": [
+        "Non-Profit",
+        "Podcasts",
+        "Business",
+        "News",
+        "Politics"
+      ],
+      "track_count": 41,
+      "country": "USA",
+      "genres_charting_in": [
+        "Entrepreneurship"
+      ],
+      "quality_score": 20,
+      "allowlist_reason": "category_pair:Business+News",
+      "tier": "REVIEW",
+      "notes": "Surfaced by quarterly refresh. Verify show fits curation criteria before adding."
+    }
+  ]
+}
