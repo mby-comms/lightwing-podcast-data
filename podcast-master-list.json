@@ -1,0 +1,836 @@
+{
+  "version": "1.0",
+  "generated": "2026-04-28",
+  "source": "Lightwing AI - hand-curated seed from existing T1/T2 lists, RSS URLs resolved via iTunes Search API",
+  "shows": [
+    {
+      "name": "Acquired",
+      "itunes_name": "Acquired",
+      "tier": "T1",
+      "feed_url": "https://feeds.transistor.fm/acquired",
+      "apple_id": 1050462261,
+      "artist_name": "Ben Gilbert and David Rosenthal",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "Business",
+        "Investing"
+      ],
+      "track_count": 214,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "Invest Like the Best with Patrick O'Shaughnessy",
+      "itunes_name": "Invest Like the Best with Patrick O'Shaughnessy",
+      "tier": "T1",
+      "feed_url": "https://feeds.megaphone.fm/CLS2859450455",
+      "apple_id": 1154105909,
+      "artist_name": "Colossus | Investing & Business Podcasts",
+      "categories": [
+        "Investing",
+        "Podcasts",
+        "Business",
+        "Technology"
+      ],
+      "track_count": 575,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "Lex Fridman Podcast",
+      "itunes_name": "Lex Fridman Podcast",
+      "tier": "T1",
+      "feed_url": "https://lexfridman.com/feed/podcast/",
+      "apple_id": 1434243584,
+      "artist_name": "Lex Fridman",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "Science"
+      ],
+      "track_count": 496,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "The Logan Bartlett Show",
+      "itunes_name": "The Logan Bartlett Show",
+      "tier": "T1",
+      "feed_url": "https://rss2.flightcast.com/jlx9l0yn04wt3r710o051jtm.xml",
+      "apple_id": 1606770839,
+      "artist_name": "by Redpoint Ventures",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "Business",
+        "Investing"
+      ],
+      "track_count": 163,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "Stratechery",
+      "itunes_name": "Sharp Tech with Ben Thompson",
+      "tier": "T1",
+      "feed_url": "https://sharptech.fm/feed/podcast",
+      "apple_id": 1646152812,
+      "artist_name": "Andrew Sharp and Ben Thompson",
+      "categories": [
+        "Technology",
+        "Podcasts"
+      ],
+      "track_count": 273,
+      "country": "USA",
+      "notes": "Stratechery is a newsletter, not a podcast. Sharp Tech with Ben Thompson is the closest podcast match."
+    },
+    {
+      "name": "The Town with Matthew Belloni",
+      "itunes_name": "The Town with Matthew Belloni",
+      "tier": "T1",
+      "feed_url": "https://feeds.megaphone.fm/the-town-with-matthew-belloni",
+      "apple_id": 1612131897,
+      "artist_name": "The Ringer",
+      "categories": [
+        "Society & Culture",
+        "Podcasts"
+      ],
+      "track_count": 615,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "The Twenty Minute VC (20VC)",
+      "itunes_name": "The Twenty Minute VC (20VC): Venture Capital | Startup Funding | The Pitch",
+      "tier": "T1",
+      "feed_url": "https://rss.libsyn.com/shows/61840/destinations/240976.xml",
+      "apple_id": 958230465,
+      "artist_name": "Harry Stebbings",
+      "categories": [
+        "Investing",
+        "Podcasts",
+        "Business",
+        "News",
+        "Tech News"
+      ],
+      "track_count": 1448,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "All-In with Chamath, Jason, Sacks & Friedberg",
+      "itunes_name": "All-In with Chamath, Jason, Sacks & Friedberg",
+      "tier": "T1",
+      "feed_url": "https://rss.libsyn.com/shows/254861/destinations/1928300.xml",
+      "apple_id": 1502871393,
+      "artist_name": "All-In Podcast, LLC",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "Business",
+        "Entrepreneurship"
+      ],
+      "track_count": 370,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "The Tim Ferriss Show",
+      "itunes_name": "The Tim Ferriss Show",
+      "tier": "T1",
+      "feed_url": "https://rss.art19.com/tim-ferriss-show",
+      "apple_id": 863897795,
+      "artist_name": "Tim Ferriss: Bestselling Author, Human Guinea Pig",
+      "categories": [
+        "Entrepreneurship",
+        "Podcasts",
+        "Business"
+      ],
+      "track_count": 866,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "The Joe Rogan Experience",
+      "itunes_name": "The Joe Rogan Experience",
+      "tier": "T1",
+      "feed_url": "https://feeds.megaphone.fm/GLT1412515089",
+      "apple_id": 360084272,
+      "artist_name": "Joe Rogan",
+      "categories": [
+        "Comedy",
+        "Podcasts"
+      ],
+      "track_count": 2000,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "Decoder with Nilay Patel",
+      "itunes_name": "Decoder with Nilay Patel",
+      "tier": "T1",
+      "feed_url": "https://feeds.megaphone.fm/recodedecode",
+      "apple_id": 1011668648,
+      "artist_name": "The Verge",
+      "categories": [
+        "Business",
+        "Podcasts",
+        "Technology"
+      ],
+      "track_count": 930,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "Dwarkesh Podcast",
+      "itunes_name": "Dwarkesh Podcast",
+      "tier": "T1",
+      "feed_url": "https://apple.dwarkesh-podcast.workers.dev/feed.rss",
+      "apple_id": 1516093381,
+      "artist_name": "Dwarkesh Patel",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "Science"
+      ],
+      "track_count": 123,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "The Ezra Klein Show",
+      "itunes_name": "The Ezra Klein Show",
+      "tier": "T1",
+      "feed_url": "https://feeds.simplecast.com/kEKXbjuJ",
+      "apple_id": 1548604447,
+      "artist_name": "New York Times Opinion",
+      "categories": [
+        "Society & Culture",
+        "Podcasts",
+        "News"
+      ],
+      "track_count": 498,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "Hard Fork",
+      "itunes_name": "Hard Fork",
+      "tier": "T1",
+      "feed_url": "https://feeds.simplecast.com/6HKOhNgS",
+      "apple_id": 1528594034,
+      "artist_name": "The New York Times",
+      "categories": [
+        "Technology",
+        "Podcasts"
+      ],
+      "track_count": 193,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "Pivot",
+      "itunes_name": "Pivot",
+      "tier": "T1",
+      "feed_url": "https://feeds.megaphone.fm/pivot",
+      "apple_id": 1073226719,
+      "artist_name": "New York Magazine",
+      "categories": [
+        "News Commentary",
+        "Podcasts",
+        "News",
+        "Tech News"
+      ],
+      "track_count": 767,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "On with Kara Swisher",
+      "itunes_name": "On with Kara Swisher",
+      "tier": "T1",
+      "feed_url": "https://feeds.megaphone.fm/VMP1684715893",
+      "apple_id": 1643307527,
+      "artist_name": "Vox Media",
+      "categories": [
+        "Society & Culture",
+        "Podcasts"
+      ],
+      "track_count": 382,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "Plain English with Derek Thompson",
+      "itunes_name": "Plain English with Derek Thompson",
+      "tier": "T1",
+      "feed_url": "https://feeds.megaphone.fm/plain-english",
+      "apple_id": 1594471023,
+      "artist_name": "The Ringer",
+      "categories": [
+        "News Commentary",
+        "Podcasts",
+        "News"
+      ],
+      "track_count": 370,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "Possible",
+      "itunes_name": "Possible",
+      "tier": "T1",
+      "feed_url": "https://feeds.megaphone.fm/possible",
+      "apple_id": 1677184070,
+      "artist_name": "Reid Hoffman",
+      "categories": [
+        "Technology",
+        "Podcasts"
+      ],
+      "track_count": 140,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "Masters of Scale",
+      "itunes_name": "Masters of Scale",
+      "tier": "T1",
+      "feed_url": "https://rss.art19.com/masters-of-scale",
+      "apple_id": 1227971746,
+      "artist_name": "WaitWhat",
+      "categories": [
+        "Management",
+        "Podcasts",
+        "Business",
+        "Entrepreneurship"
+      ],
+      "track_count": 688,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "Conversations with Tyler",
+      "itunes_name": "Conversations with Tyler",
+      "tier": "T1",
+      "feed_url": "https://rss.libsyn.com/shows/137081/destinations/850607.xml",
+      "apple_id": 983795625,
+      "artist_name": "Mercatus Center at George Mason University",
+      "categories": [
+        "Education",
+        "Podcasts",
+        "Society & Culture"
+      ],
+      "track_count": 286,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "No Priors: Artificial Intelligence",
+      "itunes_name": "No Priors: Artificial Intelligence | Technology | Startups",
+      "tier": "T1",
+      "feed_url": "https://feeds.megaphone.fm/nopriors",
+      "apple_id": 1668002688,
+      "artist_name": "Conviction",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "Business",
+        "Entrepreneurship"
+      ],
+      "track_count": 159,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "The Cognitive Revolution",
+      "itunes_name": "\"The Cognitive Revolution\" | AI Builders, Researchers, and Live Player Analysis",
+      "tier": "T1",
+      "feed_url": "https://feeds.megaphone.fm/RINTP3108857801",
+      "apple_id": 1669813431,
+      "artist_name": "Erik Torenberg, Nathan Labenz",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "Business",
+        "Entrepreneurship"
+      ],
+      "track_count": 338,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "AI + a16z",
+      "tier": "T1",
+      "feed_url": "https://feeds.simplecast.com/Hb_IuXOo",
+      "apple_id": 1740178076,
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "Business",
+        "Entrepreneurship"
+      ],
+      "notes": null,
+      "itunes_name": "AI + a16z",
+      "artist_name": "a16z",
+      "track_count": 94,
+      "country": "USA"
+    },
+    {
+      "name": "Latent Space",
+      "itunes_name": "Latent Space: The AI Engineer Podcast",
+      "tier": "T1",
+      "feed_url": "https://api.substack.com/feed/podcast/1084089.rss",
+      "apple_id": 1674008350,
+      "artist_name": "Latent.Space",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "Science"
+      ],
+      "track_count": 195,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "Odd Lots",
+      "itunes_name": "Odd Lots",
+      "tier": "T1",
+      "feed_url": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/982f5071-765c-403d-969d-ae27003a8d83/podcast.rss",
+      "apple_id": 1056200096,
+      "artist_name": "Bloomberg",
+      "categories": [
+        "Investing",
+        "Podcasts",
+        "Business",
+        "News",
+        "News Commentary"
+      ],
+      "track_count": 1203,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "Capital Allocators",
+      "tier": "T1",
+      "feed_url": "https://rss.libsyn.com/shows/94820/destinations/482814.xml",
+      "apple_id": 1223764016,
+      "categories": [
+        "Investing",
+        "Podcasts",
+        "Business"
+      ],
+      "notes": null,
+      "itunes_name": "Capital Allocators \u2013 Inside the Institutional Investment Industry",
+      "artist_name": "Ted Seides \u2013 Allocator and Asset Management Expert",
+      "track_count": 792,
+      "country": "USA"
+    },
+    {
+      "name": "We Study Billionaires",
+      "tier": "T1",
+      "feed_url": "https://feeds.megaphone.fm/PPLLC8974708240",
+      "apple_id": 928933489,
+      "categories": [
+        "Investing",
+        "Podcasts",
+        "Business",
+        "Education"
+      ],
+      "notes": null,
+      "itunes_name": "The Investor's Podcast (We Study Billionaires)  - The Investor\u2019s Podcast Network",
+      "artist_name": "The Investor's Podcast Network",
+      "track_count": 1183,
+      "country": "USA"
+    },
+    {
+      "name": "Goldman Sachs Exchanges",
+      "itunes_name": "Exchanges",
+      "tier": "T1",
+      "feed_url": "https://feeds.megaphone.fm/GLD9218176758",
+      "apple_id": 948913991,
+      "artist_name": "Goldman Sachs",
+      "categories": [
+        "Business",
+        "Podcasts"
+      ],
+      "track_count": 616,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "Making Sense",
+      "itunes_name": "Making Sense",
+      "tier": "T1",
+      "feed_url": "https://feed.podbean.com/marketmatters/feed.xml",
+      "apple_id": 1456184829,
+      "artist_name": "J.P. Morgan",
+      "categories": [
+        "Business",
+        "Podcasts"
+      ],
+      "track_count": 300,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "This Week in Startups",
+      "itunes_name": "This Week in Startups",
+      "tier": "T1",
+      "feed_url": "https://anchor.fm/s/7c624c84/podcast/rss",
+      "apple_id": 315114957,
+      "artist_name": "Jason Calacanis",
+      "categories": [
+        "Technology",
+        "Podcasts"
+      ],
+      "track_count": 1412,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "411 by The Information",
+      "itunes_name": "Player One Podcast",
+      "tier": "T1",
+      "feed_url": "https://rss.libsyn.com/shows/18378/destinations/12260.xml",
+      "apple_id": 202883543,
+      "artist_name": "Player One Podcast",
+      "categories": [
+        "Video Games",
+        "Podcasts",
+        "Leisure",
+        "Games"
+      ],
+      "track_count": 1338,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "a16z Podcast",
+      "itunes_name": "The a16z Show",
+      "tier": "T2",
+      "feed_url": "https://feeds.simplecast.com/JGE3yC0V",
+      "apple_id": 842818711,
+      "artist_name": "Andreessen Horowitz",
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "Business",
+        "Entrepreneurship"
+      ],
+      "track_count": 1000,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "How I Built This with Guy Raz",
+      "itunes_name": "How I Built This with Guy Raz",
+      "tier": "T2",
+      "feed_url": "https://rss.art19.com/how-i-built-this",
+      "apple_id": 1150510297,
+      "artist_name": "Guy Raz | Wondery",
+      "categories": [
+        "Business",
+        "Podcasts"
+      ],
+      "track_count": 838,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "HBR IdeaCast",
+      "itunes_name": "HBR IdeaCast",
+      "tier": "T2",
+      "feed_url": "http://feeds.harvardbusiness.org/harvardbusiness/ideacast",
+      "apple_id": 152022135,
+      "artist_name": "Harvard Business Review",
+      "categories": [
+        "Management",
+        "Podcasts",
+        "Business",
+        "Entrepreneurship"
+      ],
+      "track_count": 648,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "WorkLife with Adam Grant",
+      "itunes_name": "Worklife with Molly Graham",
+      "tier": "T2",
+      "feed_url": "https://feeds.acast.com/public/shows/67585d9cc705e441796ddaf6",
+      "apple_id": 1346314086,
+      "artist_name": "TED",
+      "categories": [
+        "Management",
+        "Podcasts",
+        "Business",
+        "Careers"
+      ],
+      "track_count": 266,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "The McKinsey Podcast",
+      "tier": "T2",
+      "feed_url": "https://www.omnycontent.com/d/playlist/708664bd-6843-4623-8066-aede00ce0c8a/3f6f52af-fba1-496d-b11b-af040139456a/bfe0b44a-082f-495a-952a-af0401394590/podcast.rss",
+      "apple_id": 285260960,
+      "categories": [
+        "Management",
+        "Podcasts",
+        "Business",
+        "Marketing"
+      ],
+      "notes": null,
+      "itunes_name": "The McKinsey Podcast",
+      "artist_name": "McKinsey & Company",
+      "track_count": 100,
+      "country": "USA"
+    },
+    {
+      "name": "Coaching for Leaders",
+      "tier": "T2",
+      "feed_url": "https://feeds.podcastmirror.com/coaching-for-leaders",
+      "apple_id": 458827716,
+      "categories": [
+        "Management",
+        "Podcasts",
+        "Business",
+        "Careers"
+      ],
+      "notes": null,
+      "itunes_name": "Coaching for Leaders",
+      "artist_name": "Dave Stachowiak",
+      "track_count": 785,
+      "country": "USA"
+    },
+    {
+      "name": "Founders",
+      "tier": "T2",
+      "feed_url": "https://feeds.megaphone.fm/DSLLC6297708582",
+      "apple_id": 1141877104,
+      "categories": [
+        "Entrepreneurship",
+        "Podcasts",
+        "Business",
+        "History"
+      ],
+      "notes": null,
+      "itunes_name": "Founders",
+      "artist_name": "David Senra",
+      "track_count": 442,
+      "country": "USA"
+    },
+    {
+      "name": "My First Million",
+      "tier": "T2",
+      "feed_url": "https://feeds.megaphone.fm/HS2300184645",
+      "apple_id": 1469759170,
+      "categories": [
+        "Entrepreneurship",
+        "Podcasts",
+        "Business",
+        "Investing"
+      ],
+      "notes": null,
+      "itunes_name": "My First Million",
+      "artist_name": "Hubspot Media",
+      "track_count": 859,
+      "country": "USA"
+    },
+    {
+      "name": "Lenny's Podcast: Product | Growth | Career",
+      "tier": "T2",
+      "feed_url": "https://api.substack.com/feed/podcast/10845.rss",
+      "apple_id": 1627920305,
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "Business",
+        "Entrepreneurship"
+      ],
+      "notes": null,
+      "itunes_name": "Lenny's Podcast: Product | Career | Growth",
+      "artist_name": "Lenny Rachitsky",
+      "track_count": 341,
+      "country": "USA"
+    },
+    {
+      "name": "Acquired LP Show",
+      "tier": "T2",
+      "feed_url": "https://feeds.transistor.fm/acquired",
+      "apple_id": 1050462261,
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "Business",
+        "Investing"
+      ],
+      "notes": null,
+      "itunes_name": "Acquired",
+      "artist_name": "Ben Gilbert and David Rosenthal",
+      "track_count": 214,
+      "country": "USA"
+    },
+    {
+      "name": "The Vergecast",
+      "tier": "T2",
+      "feed_url": "https://feeds.megaphone.fm/vergecast",
+      "apple_id": 430333725,
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "News",
+        "Tech News"
+      ],
+      "notes": null,
+      "itunes_name": "The Vergecast",
+      "artist_name": "The Verge",
+      "track_count": 991,
+      "country": "USA"
+    },
+    {
+      "name": "Sharp Tech with Ben Thompson",
+      "itunes_name": "Sharp Tech with Ben Thompson",
+      "tier": "T2",
+      "feed_url": "https://sharptech.fm/feed/podcast",
+      "apple_id": 1646152812,
+      "artist_name": "Andrew Sharp and Ben Thompson",
+      "categories": [
+        "Technology",
+        "Podcasts"
+      ],
+      "track_count": 273,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "Bg2 Pod",
+      "itunes_name": "BG2Pod with Brad Gerstner and Bill Gurley",
+      "tier": "T2",
+      "feed_url": "https://anchor.fm/s/f06c2370/podcast/rss",
+      "apple_id": 1727278168,
+      "artist_name": "BG2Pod",
+      "categories": [
+        "Technology",
+        "Podcasts"
+      ],
+      "track_count": 43,
+      "country": "USA",
+      "notes": null
+    },
+    {
+      "name": "In Good Company with Nicolai Tangen",
+      "tier": "T2",
+      "feed_url": "https://feeds.acast.com/public/shows/622618c7057f3400120d15db",
+      "apple_id": 1614211565,
+      "categories": [
+        "Business",
+        "Podcasts"
+      ],
+      "notes": null,
+      "itunes_name": "In Good Company with Nicolai Tangen",
+      "artist_name": "Norges Bank Investment Management",
+      "track_count": 245,
+      "country": "USA"
+    },
+    {
+      "name": "The Information's TITV",
+      "tier": "T2",
+      "feed_url": "https://anchor.fm/s/9add758/podcast/rss",
+      "apple_id": 1035041995,
+      "categories": [
+        "Tech News",
+        "Podcasts",
+        "News"
+      ],
+      "notes": null,
+      "itunes_name": "The Information's TITV",
+      "artist_name": "The Information",
+      "track_count": 305,
+      "country": "USA"
+    },
+    {
+      "name": "Founder's Field Guide",
+      "tier": "T2",
+      "feed_url": "https://anchor.fm/s/52512b4/podcast/rss",
+      "apple_id": 1406059045,
+      "categories": [
+        "Business",
+        "Podcasts"
+      ],
+      "notes": null,
+      "itunes_name": "The Honest Field Guide\u00ae",
+      "artist_name": "JinJa Birkenbeuel, Host, The Honest Field Guide",
+      "track_count": 106,
+      "country": "USA"
+    },
+    {
+      "name": "Bankless",
+      "tier": "T2",
+      "feed_url": "https://feeds.flightcast.com/p83fuj0y0u58o82l41xei7zo.xml",
+      "apple_id": 1499409058,
+      "categories": [
+        "Technology",
+        "Podcasts",
+        "News",
+        "Tech News"
+      ],
+      "notes": null,
+      "itunes_name": "Bankless",
+      "artist_name": "Bankless",
+      "track_count": 1261,
+      "country": "USA"
+    },
+    {
+      "name": "Risky Business",
+      "tier": "T2",
+      "feed_url": "https://risky.biz/feeds/risky-business/",
+      "apple_id": 216478078,
+      "categories": [
+        "Tech News",
+        "Podcasts",
+        "News",
+        "Technology"
+      ],
+      "notes": null,
+      "itunes_name": "Risky Business",
+      "artist_name": "Risky Business Media",
+      "track_count": 102,
+      "country": "USA"
+    },
+    {
+      "name": "Marketplace",
+      "tier": "T2",
+      "feed_url": "https://feeds.publicradio.org/public_feeds/marketplace",
+      "apple_id": 201853034,
+      "categories": [
+        "Politics",
+        "Podcasts",
+        "News"
+      ],
+      "notes": "Verified via direct iTunes API lookup - first auto-resolution returned wrong subseries",
+      "itunes_name": "Marketplace",
+      "artist_name": "Marketplace",
+      "track_count": 26,
+      "country": "USA"
+    },
+    {
+      "name": "Planet Money",
+      "itunes_name": "Planet Money",
+      "tier": "T2",
+      "feed_url": "https://feeds.npr.org/510289/podcast.xml",
+      "apple_id": 290783428,
+      "artist_name": "NPR",
+      "categories": [
+        "Business",
+        "Podcasts",
+        "News"
+      ],
+      "track_count": 640,
+      "country": "USA",
+      "notes": null
+    }
+  ]
+}
